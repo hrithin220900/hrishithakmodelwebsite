@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #DDD;
+  font-family: Open sans;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
+}
+
+.bkbt{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: rgb(0,108,168);
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 7.5px;
+  display: none;
+}
+
+.bkbt_m{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: rgb(0,108,168);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 7.5px;
+}
+
+.bkbt:hover{
+  background-color: tomato;
+}
+
+.bkbt_m:hover{
+  background-color: tomato;
+}
+
+.acv{
+  background-image: url(6iws.jpeg);
+  margin-top: 20px;
+  padding: 15px;
+  display: none;
+}
+
+.acv_head{
+  margin: 15px;
+  background-color: #444;
+  border: 3px solid #666;
+  color: #DDD;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.acv_h1{
+  font-size: 30px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.f_div{
+  width: 33.33%;
+  background-color: white;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.a_img{
+  width: 100%;
+}
+
+.f_sub{
+  padding: 10px;
+}
+
+.ud{
+  border-bottom: 3px solid #CCC;
+  color: red;
+}
+
+.mob_acv{
+  background-image: url(6iws.jpeg);
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.fm_div{
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.foot{
+  width: 100%;
+  height: 250px;
+  background-color: #white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footp{
+  margin-top: 35px;
+}
+
+.foot_top{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+
+.foot_top:hover{
+  background-color: tomato;
+}
+
+ul{
+  color: #777;
+}
+
+@media only screen and (min-width: 768px){
+.mob_acv{
+  display: none;
+}
+
+.acv{
+  display: block;
+}
+
+.acv_h1{
+  font-size: 48px;
+}
+
+.bkbt_m{
+  display: none;
+  clear: both;
+}
+
+.bkbt{
+  display: block;
+}
+}
